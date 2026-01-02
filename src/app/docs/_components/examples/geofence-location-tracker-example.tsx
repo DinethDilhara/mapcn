@@ -112,7 +112,7 @@ function ResetCenterButton({ onClear }: { onClear?: () => void }) {
     <Button
       variant="secondary"
       size="icon"
-      className="absolute bottom-13 right-2 z-10 size-8"
+      className="absolute bottom-20 right-2 z-10 size-8"
       onClick={handleClick}
     >
       <RefreshCcw size={16} />
