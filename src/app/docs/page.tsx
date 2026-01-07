@@ -1,4 +1,4 @@
-import { Zap, Moon, Puzzle, Code } from "lucide-react";
+import { Zap, Moon, Puzzle, Code, Box, Palette } from "lucide-react";
 import { DocsLayout, DocsSection, DocsLink } from "./_components/docs";
 import { Metadata } from "next";
 
@@ -7,12 +7,12 @@ const features = [
     icon: Zap,
     title: "Zero Config",
     description:
-      "Works out of the box with free map tiles. No API keys required.",
+      "Works out of the box with free map tiles. No API keys needed.",
   },
   {
     icon: Moon,
     title: "Theme Aware",
-    description: "Automatically adapts to light and dark mode.",
+    description: "Automatically switches between light and dark map styles.",
   },
   {
     icon: Puzzle,
@@ -23,6 +23,16 @@ const features = [
     icon: Code,
     title: "TypeScript",
     description: "Full type safety with comprehensive TypeScript support.",
+  },
+  {
+    icon: Box,
+    title: "Copy & Paste",
+    description: "Own your code. No dependencies, just copy into your project.",
+  },
+  {
+    icon: Palette,
+    title: "Customizable",
+    description: "Styled with Tailwind. Easy to customize and extend.",
   },
 ];
 

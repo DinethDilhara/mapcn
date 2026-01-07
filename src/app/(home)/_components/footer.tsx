@@ -2,20 +2,30 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="w-full px-6 py-6 border-t border-border/40">
-      <div className="mx-auto max-w-5xl flex items-center justify-between text-xs text-muted-foreground">
-        <span>
-          Built by{" "}
-          <a
-            href="https://github.com/AnmolSaini16"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-foreground hover:underline"
+    <footer className="w-full px-6 py-8 border-t border-border/40 bg-muted/20">
+      <div className="mx-auto max-w-5xl flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
+        <div className="flex items-center gap-2 flex-wrap justify-center sm:justify-start">
+          <span>© {new Date().getFullYear()} mapcn</span>
+          <span className="text-border">•</span>
+          <span>
+            Built by{" "}
+            <a
+              href="https://github.com/AnmolSaini16"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-foreground hover:underline underline-offset-4"
+            >
+              Anmol
+            </a>
+          </span>
+        </div>
+        <div className="flex items-center gap-6">
+          <Link
+            href="/docs"
+            className="hover:text-foreground transition-colors"
           >
-            Anmol
-          </a>
-        </span>
-        <div className="flex items-center gap-4">
+            Documentation
+          </Link>
           <a
             href="https://github.com/AnmolSaini16/mapcn"
             target="_blank"
@@ -24,12 +34,6 @@ export function Footer() {
           >
             GitHub
           </a>
-          <Link
-            href="/docs"
-            className="hover:text-foreground transition-colors"
-          >
-            Docs
-          </Link>
         </div>
       </div>
     </footer>
